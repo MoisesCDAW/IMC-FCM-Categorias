@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMC</title>
+        <link rel="stylesheet" href="css/imc.css">
+    </head>
+    <body>
+        <div id="volver"><a href="index.html"><img src="media/flecha.png"></a></div>
+
+        <div id="cont_imc">
+            <h2 id="titulo_calc">Calculadora de IMC</h2>
+
+            <div id="interactivo">
+                <input type="number" id="peso" placeholder="Ingresa tu peso">
+                <input type="number" id="altura" placeholder="Ingresa tu alutra en centímetros">
+                <input type="submit" id="boton_enviar" value="Enviar" onclick="imc()">
+                <p id="consola_imc">Tu índice de masa corporal es: <br></p>
+                <div id="divisor"></div>
+            </div>
+            
+            <div id="tabla_imc">
+                <table>
+                    <tr>
+                        <td>Rangos</td>
+                        <td>Situación</td>
+                    </tr>
+                    <tr>
+                        <td>&lt; 16.00</td>
+                        <td>Infrapeso (delgadez severa)</td>
+                    </tr>
+                    <tr>
+                        <td>16.00 – 16.99</td>
+                        <td>Infrapeso (delgadez moderada)</td>
+                    </tr>
+                    <tr>
+                        <td>17.00 - 18.49</td>
+                        <td>Infrapeso (delgadez aceptable)</td>
+                    </tr>
+                    <tr>
+                        <td>18.50 - 24.99</td>
+                        <td>Peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>25.00 - 29.99</td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>30.00 - 34.99</td>
+                        <td>Obeso (Tipo I)</td>
+                    </tr>
+                    <tr>
+                        <td>35.00 - 40.00</td>
+                        <td>Obeso (Tipo II)</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 40.00</td>
+                        <td>Obeso (Tipo III)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="js/programa.js"></script>
+    </body>
+</html>

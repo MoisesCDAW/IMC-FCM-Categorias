@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "PlaypenSans_Medium";
+    src: url("/fuentes/Playpen_Sans/static/PlaypenSans-Medium.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+/*-------------------------- IMC -------------------------------*/
+body {
+    display: flex;
+    background: url("../media/fondo2.jpg");
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: "PlaypenSans_Medium";
+    gap: 20%;
+}
+
+#volver {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 10%;
+    height: 80px;
+}
+
+#volver a {
+    text-decoration: none;
+}
+
+#cont_fcm {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A535C;
+    width: 40%;
+    height: 90vh;
+    border-radius: 35px;
+    box-shadow: 0 0 25px rgb(26, 26, 26);
+}
+
+#titulo_calc {
+    padding-top: 4%;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 10%;
+}
+
+
+#interactivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    gap: 6%;
+    padding-top: 2%;
+}
+
+#interactivo #edad{
+    padding-left: 2%;
+    width: 80%;
+    height: 20%;
+    border-radius: 7px;
+    border: none;
+}
+
+#interactivo #genero {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+}
+
+#interactivo #boton_enviar {
+    margin-top: 2%;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #4ECDC4;
+    color: white;
+}
+
+#interactivo #boton_enviar:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+#interactivo #consola_fcm{
+    text-align: center;
+    width: 300px;
+    height: 30px;
+}
+
+#interactivo #divisor {
+    margin-top: 2%;
+    width: 10%;
+    border: 1px solid white;
+}
+
+#tabla_fcm{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    width: 100%;
+    height: 50%;
+}
+
+#tabla_fcm table {
+    width: 80%;
+    height: 60%;
+    border-collapse: collapse;
+}
+
+#tabla_fcm td{
+    padding-left: 3%;
+    border: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#tabla_fcm tr:nth-child(even){
+    background-color: white;
+    color: black;
+}

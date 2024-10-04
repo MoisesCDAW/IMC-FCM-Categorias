@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FCM</title>
+        <link rel="stylesheet" href="css/fcm.css">
+    </head>
+    <body>
+        <div id="volver"><a href="index.html"><img src="media/flecha.png"></a></div>
+        <div id="cont_fcm">
+            <h2 id="titulo_calc">Calculadora de FCM</h2>
+            
+            <div id="interactivo">
+                <input type="number" id="edad" placeholder="Ingresa tu edad">
+                <div id="genero">
+                    <input type="radio" id="hombre" name="genero" checked>Hombre
+                    <input type="radio" id="mujer" name="genero">Mujer
+                </div>
+                <input type="submit" id="boton_enviar" value="Enviar" onclick="fcm()">
+                <p id="consola_fcm">Tu frecuencia cardiaca máxima es: <br></p>
+                <div id="divisor"></div>
+            </div>
+
+            <div  id="tabla_fcm">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Porcentajes</td>
+                        <td>Rangos FCM</td>
+                    </tr>
+                    <tr>
+                        <td>Zona de recuperación</td>
+                        <td>60%-70%</td>
+                        <td id="rango1"></td>
+                    </tr>
+                    <tr>
+                        <td>Zona aeróbica</td>
+                        <td>70%-80%</td>
+                        <td id="rango2"></td>
+                    </tr>
+                    <tr>
+                        <td>Zona anaeróbica</td>
+                        <td>80%-90%</td>
+                        <td id="rango3"></td>
+                    </tr>
+                    <tr>
+                        <td>Línea roja</td>
+                        <td>90%-100%</td>
+                        <td id="rango4"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="js/programa.js"></script>
+    </body>
+</html>

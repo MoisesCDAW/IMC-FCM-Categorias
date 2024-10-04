@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Categoria</title>
+        <link rel="stylesheet" href="css/categoria.css">
+    </head>
+    <body>
+        <div id="volver"><a href="index.html"><img src="media/flecha.png"></a></div>
+        <div id="cont_categoria">
+            <h2 id="titulo_calc">Categorías por edad</h2>
+
+            <div id="interactivo">
+                <input type="number" id="year_nac" placeholder="Ingresa tu año de nacimiento">
+                <input type="submit" id="boton_enviar" value="Enviar" onclick="categoria()">
+                <p id="consola_cate">Tu categoría es: <br></p>
+                <div id="divisor"></div>
+            </div>
+
+            <div id="tabla_cate">
+                <table>
+                    <tr>
+                        <td>Categoría</td>
+                        <td>Edad</td>
+                    </tr>
+                    <tr>
+                        <td>Niñez</td>
+                        <td>5 - 13</td>
+                    </tr>
+                    <tr>
+                        <td>Adolescencia</td>
+                        <td>14 - 17</td>
+                    </tr>
+                    <tr>
+                        <td>Adultos Jóvenes</td>
+                        <td>18 - 35</td>
+                    </tr>
+                    <tr>
+                        <td>Adultez</td>
+                        <td>36 - 64</td>
+                    </tr>
+                    <tr>
+                        <td>Tercera Edad</td>
+                        <td>65 &gt;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="js/programa.js"></script>
+    </body>
+</html>
